@@ -73,7 +73,10 @@ game card {
 	margin: 10px;
 
 	transition: transform ease .350s, box-shadow ease .350s;
+	-webkit-transition: -webkit-transform ease .350s, -webkit-box-shadow ease .350s;
+
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 
 game card div {
@@ -84,13 +87,18 @@ game card div {
 	left:0;
 
 	perspective: 1000px;
+	-webkit-perspective: 1000px;
+
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 
 game card.flipped {
-	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+
 	box-shadow: -4px 4px 12px #844;
+	-webkit-box-shadow: -4px 4px 12px #844;
 }
 
 game card front, game card back {
@@ -104,11 +112,13 @@ game card front, game card back {
 	text-align: center;
 
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 game card front {
 	background: white;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 	font-size: 30px;
 }
 
