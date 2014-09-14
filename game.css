@@ -23,6 +23,9 @@ game * {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 game status, game tries {
@@ -106,6 +109,7 @@ game card front, game card back {
 game card front {
 	background: white;
 	transform: rotateY(180deg);
+	font-size: 30px;
 }
 
 game card back {
