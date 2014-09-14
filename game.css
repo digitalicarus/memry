@@ -69,8 +69,10 @@ game card {
 	display: inline-block;
 	border: 5px solid white;
 	border-radius: 3px;
-	box-shadow: 4px 4px 12px #666;
 	margin: 10px;
+
+	box-shadow: 4px 4px 2px #666;
+	-webkit-box-shadow: 4px 4px 2px #666;
 
 	transition: transform ease .350s, box-shadow ease .350s;
 	-webkit-transition: -webkit-transform ease .350s, -webkit-box-shadow ease .350s;
@@ -97,8 +99,8 @@ game card.flipped {
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
 
-	box-shadow: -4px 4px 12px #844;
-	-webkit-box-shadow: -4px 4px 12px #844;
+	box-shadow: -4px 4px 2px #844;
+	-webkit-box-shadow: -4px 4px 2px #844;
 }
 
 game card front, game card back {
