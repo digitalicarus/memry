@@ -37,7 +37,7 @@ game status, game tries {
 	position: absolute;
 	top: 0;
 	text-align: middle;
-	font-family: fantasy;
+	font-family: fantasy, monospace;
 
 	vertical-align: middle;
 }
@@ -73,8 +73,8 @@ game card {
 	border-radius: 3px;
 	margin: 10px;
 
-	box-shadow: 4px 4px 2px #666;
-	-webkit-box-shadow: 4px 4px 2px #666;
+	box-shadow: 4px 4px 2px #494949;
+	-webkit-box-shadow: 4px 4px 2px #494949;
 
 	transition: transform ease .350s, box-shadow ease .350s;
 	-webkit-transition: -webkit-transform ease .350s, -webkit-box-shadow ease .350s;
@@ -100,9 +100,6 @@ game card div {
 game card.flipped {
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
-
-	box-shadow: -4px 4px 2px #844;
-	-webkit-box-shadow: -4px 4px 2px #844;
 }
 
 game card front, game card back {
