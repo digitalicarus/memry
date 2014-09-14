@@ -26,7 +26,7 @@ var MemoryGame = (function () {
 
 	Array.prototype.copy      = function () {return this.slice(0);};
 	Array.prototype.randomize = function () {return this.sort(function(){return Math.random()>=0.5;})};
-	Array.prototype.randCopy  = function () {return this.copy().randomize(); };
+	Array.prototype.randCopy  = function () {return this.copy().sort(function(){return Math.random()>=0.5;});};
 
 	// Game Objects
 	// ------

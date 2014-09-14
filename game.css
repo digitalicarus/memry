@@ -9,6 +9,8 @@ game {
 	perspective: 1000px;
 	padding-top: 30px;
 
+	position: relative;
+
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
