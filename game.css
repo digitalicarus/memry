@@ -2,7 +2,6 @@ body {
 	background-color: black;
 }
 
-
 game {
 	display: block;
 	margin: 20px auto;
@@ -72,6 +71,12 @@ game card {
 
 	transition: transform ease .350s, box-shadow ease .350s;
 	transform-style: preserve-3d;
+}
+
+game card div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 game card.flipped {

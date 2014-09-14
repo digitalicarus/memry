@@ -38,7 +38,7 @@ var MemoryGame = (function () {
 	};
 	Card.prototype.flipClass = 'flipped';
 	Card.prototype.tmpl = function () {
-		return '<front>'+this.type+'</front><back>&nbsp;</back>';
+		return '<div><front>'+this.type+'</front><back>&nbsp;</back></div>';
 	};
 	Card.prototype.render = function (parentNode) {
 		this.node = create('card');
