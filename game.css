@@ -1,0 +1,110 @@
+body {
+	background-color: black;
+}
+
+
+game {
+	display: block;
+	margin: 20px auto;
+	width: 550px;
+	perspective: 1000px;
+	padding-top: 30px;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+game * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+game status, game tries {
+	color: white;
+	font-size: 24px;
+
+	position: absolute;
+	top: 0;
+	text-align: middle;
+	font-family: fantasy;
+
+	vertical-align: middle;
+}
+
+game status {
+	right: 0;
+}
+game tries {
+	left: 0;
+	color: red;
+}
+
+game button {
+	background-color: green;
+	color: white;
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 3px;
+	border-width: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+game button:hover {
+	color: #87F99B;
+}
+
+game card {
+	width: 60px;
+	height: 80px;
+	position: relative;
+	display: inline-block;
+	border: 5px solid white;
+	border-radius: 3px;
+	box-shadow: 4px 4px 12px #666;
+	margin: 10px;
+
+	transition: transform ease .350s, box-shadow ease .350s;
+	transform-style: preserve-3d;
+}
+
+game card.flipped {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	box-shadow: -4px 4px 12px #844;
+}
+
+game card front, game card back {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 80px;
+	text-align: center;
+
+	backface-visibility: hidden;
+}
+
+game card front {
+	background: white;
+	transform: rotateY(180deg);
+}
+
+game card back {
+	cursor: pointer;
+
+	/* http://lea.verou.me/css3patterns/ */
+	background-color: hsl(2, 57%, 40%);
+	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
