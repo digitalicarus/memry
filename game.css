@@ -100,6 +100,9 @@ game card div {
 game card.flipped {
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
+	
+	box-shadow: 4px 4px 2px #494949;
+	-webkit-box-shadow: 4px 4px 2px #494949;
 }
 
 game card front, game card back {
