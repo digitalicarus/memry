@@ -60,7 +60,7 @@ var MemoryGame = (function () {
 		this.resetBtn.innerHTML = 'please sir, may I have another?';
 		this.resetBtn.addEventListener('click', function () { this.reset(); }.bind(this), false);
 	};
-	Game.prototype.tries      = 3;
+	Game.prototype.tries      = 5;
 	Game.prototype.turnDelay  = 2000;
 	Game.prototype.STATES     = { 
 		play:      'pick a card, any card',
